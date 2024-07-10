@@ -1,14 +1,14 @@
 ## Meu portfólio 🔥
 
-conheça as seções:
+**Conheça as seções:**
 
-- **Home:** Uma introdução sobre mim e uma visão geral do meu trabalho.
-- **Sobre:** Detalhes sobre minha formação, experiência e interesses.
-- **Projetos:** Uma coleção dos meus projetos mais recentes, incluindo descrições e imagens.
-- **Daily:** Um diário de estudos em formato de vlog, onde compartilho minha jornada de aprendizado.
+- **Home:** Uma pequena apresentação sobre mim, minhas habilidades e uma visão geral das áreas que atuo.
+- **Sobre:** Detalhes sobre minha formação, algumas experiências e interesses.
+- **Projetos:** Uma sessão onde irei compartilhar os cases de estudos e meus projetos mais recentes, incluindo descrições e capturas de tela - mobile e desktop.
+- **Daily:** Um diário de estudos em formato de vlog, onde vou compartilhar a minha jornada de aprendizado.
 - **Contato:** Informações para entrar em contato comigo.
 
-## 🚀 Tecnologias Utilizadas
+## → → Tecnologias e ferramentas Utilizadas
 
 - **HTML5:** Para a estrutura do site
 - **CSS3:** Para a estilização e layout
