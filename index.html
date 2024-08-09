@@ -3,99 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nay Rodrigues - Portfólio Dev</title>
-    <!-- já inlcuí o atalho para o css, pq consigo ter um view melhor sobrepondo com o protótipo -->
-    <link rel="stylesheet" href="styles.css"> 
+    <title>Nay Rodrigues - Desenvolvedora Full Stack</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <h1>Nay Rodrigues</h1>
-            <nav>
+            <nav class="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="daily.html">Daily</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="pages/sobre.html">Sobre</a></li>
+                    <li><a href="pages/projetos.html">Projetos</a></li>
+                    <li><a href="pages/daily.html">Daily</a></li>
+                    <li><a href="pages/contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    
     <section class="intro">
         <div class="container">
-            <img src="https://avatars.githubusercontent.com/u/72886862?v=4" alt="Nay Rodrigues" class="profile-pic">
-            <h2>Desenvolvedora Full Stack</h2>
-            <p>Especialista em UX/UI Design e desenvolvimento web.</p>
+            <div class="profile">
+                <div class="profile-image"></div>
+                <h1 class="name">NAY</h1>
+                <h2 class="surname">RODRIGUES</h2>
+                <p class="role">Desenvolvedora Full Stack</p>
+                <p class="specialty">Especialista em UX/UI Design e desenvolvimento web.</p>
+            </div>
         </div>
     </section>
+    
     <section class="skills">
         <div class="container">
-            <h2>O que eu faço</h2>
-            <div class="skill-cards">
-                <div class="skill-card">
+            <h2>COMO EU POSSO TE AJUDAR</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-icon"></div>
                     <h3>UX/UI Design</h3>
-                    <p>Criação de interfaces intuitivas e atraentes.</p>
+                    <p>Criação de interfaces intuitivas, modernas e atraentes.</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill">
+                    <div class="skill-icon"></div>
                     <h3>Desenvolvimento Web</h3>
                     <p>Desenvolvimento de sites responsivos e funcionais.</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill">
+                    <div class="skill-icon"></div>
                     <h3>SEO</h3>
                     <p>Otimização de sites para motores de busca.</p>
                 </div>
             </div>
         </div>
     </section>
+    
+    <section class="cta">
+        <div class="container">
+            <a href="pages/projetos.html" class="cta-button">Saiba mais sobre soluções digitais</a>
+        </div>
+    </section>
+    
     <section class="portfolio">
         <div class="container">
-            <h2>Meus Projetos</h2>
-            <div class="project-gallery">
-                <div class="project-item">
-                    <img src="imagens/projeto1.jpg" alt="Projeto 1">
-                    <h3>Projeto 1</h3>
+            <h2>VEJA ALGUNS TRABALHOS</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-item">Projeto 1</div>
+                    <div class="carousel-item">Projeto 2</div>
+                    <div class="carousel-item">Projeto 3</div>
+                    <div class="carousel-item">Projeto 4</div>
+                    <div class="carousel-item">Projeto 5</div>
+                    <div class="carousel-item">Projeto 6</div>
+                    <div class="carousel-item">Projeto 7</div>
                 </div>
-                <div class="project-item">
-                    <img src="imagens/projeto2.jpg" alt="Projeto 2">
-                    <h3>Projeto 2</h3>
-                </div>
-                <div class="project-item">
-                    <img src="imagens/projeto3.jpg" alt="Projeto 3">
-                    <h3>Projeto 3</h3>
-                </div>
+                <button class="carousel-button prev">&lt;</button>
+                <button class="carousel-button next">&gt;</button>
             </div>
         </div>
     </section>
-    <section class="articles">
-        <div class="container">
-            <h2>Últimos Artigos</h2>
-            <div class="article-list">
-                <article>
-                    <h3><a href="#">Artigo 1</a></h3>
-                    <p>Resumo do artigo 1.</p>
-                </article>
-                <article>
-                    <h3><a href="#">Artigo 2</a></h3>
-                    <p>Resumo do artigo 2.</p>
-                </article>
-                <article>
-                    <h3><a href="#">Artigo 3</a></h3>
-                    <p>Resumo do artigo 3.</p>
-                </article>
+    
+    <section class="contact">
+        <div class="container contact-flex">
+            <div class="contact-info">
+                <h2>MAIS PERTINHO É MAIS GOSTOSO</h2>
+                <p>Se você está com alguma dúvida, podemos bater um papo e eu te explico detalhadamente como posso te ajudar.</p>
+                <button class="whatsapp-button" onclick="window.location.href='pages/contato.html'">Me chama no Whats</button>
+            </div>
+            <div class="contact-form">
+                <h2>ALÔ, FALA COMIGO</h2>
+                <form>
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
         </div>
     </section>
-    <footer>
+    
+    <footer class="footer">
         <div class="container">
-            <h2>Entre em Contato</h2>
-            <p>Envie uma mensagem para <a href="mailto:nayrodrigues@example.com">nayrodrigues@example.com</a></p>
-            <ul class="social-links">
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
+            <p>&copy; 2024 Nay Rodrigues - Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="js/carousel.js"></script>
 </body>
 </html>
