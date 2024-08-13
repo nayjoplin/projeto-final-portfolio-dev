@@ -4,44 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos - Nay Rodrigues</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Meus Projetos</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="daily.html">Daily</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="daily.html">Daily</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Projetos Desenvolvidos</h2>
-            <ul>
-                <li>
-                    <h3>Projeto 1</h3>
-                    <p>Descrição do projeto 1.</p>
-                    <a href="link-do-projeto1.html">Ver Projeto</a>
-                </li>
-                <li>
-                    <h3>Projeto 2</h3>
-                    <p>Descrição do projeto 2.</p>
-                    <a href="link-do-projeto2.html">Ver Projeto</a>
-                </li>
-                <li>
-                    <h3>Projeto 3</h3>
-                    <p>Descrição do projeto 3.</p>
-                    <a href="link-do-projeto3.html">Ver Projeto</a>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Nay Rodrigues. Todos os direitos reservados.</p>
+    
+    <section class="projects">
+        <div class="container">
+            <h1>Projetos</h1>
+            <div class="carousel">
+                <input type="radio" name="carousel" id="slide1" checked>
+                <input type="radio" name="carousel" id="slide2">
+                <input type="radio" name="carousel" id="slide3">
+                <input type="radio" name="carousel" id="slide4">
+                <input type="radio" name="carousel" id="slide5">
+                <input type="radio" name="carousel" id="slide6">
+                <input type="radio" name="carousel" id="slide7">
+
+                <div class="carousel-track">
+                    <div class="carousel-item"><a href="projeto1.html">Projeto 1</a></div>
+                    <div class="carousel-item"><a href="projeto2.html">Projeto 2</a></div>
+                    <div class="carousel-item"><a href="projeto3.html">Projeto 3</a></div>
+                    <div class="carousel-item"><a href="projeto4.html">Projeto 4</a></div>
+                    <div class="carousel-item"><a href="projeto5.html">Projeto 5</a></div>
+                    <div class="carousel-item"><a href="projeto6.html">Projeto 6</a></div>
+                    <div class="carousel-item"><a href="projeto7.html">Projeto 7</a></div>
+                </div>
+
+                <div class="carousel-controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                    <label for="slide6"></label>
+                    <label for="slide7"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Nay Rodrigues - Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
