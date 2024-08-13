@@ -12,10 +12,10 @@
             <nav class="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/sobre.html">Sobre</a></li>
-                    <li><a href="pages/projetos.html">Projetos</a></li>
-                    <li><a href="pages/daily.html">Daily</a></li>
-                    <li><a href="pages/contato.html">Contato</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="daily.html">Daily</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -58,7 +58,7 @@
     
     <section class="cta">
         <div class="container">
-            <a href="pages/projetos.html" class="cta-button">Saiba mais sobre soluções digitais</a>
+            <a href="projetos.html" class="cta-button">Saiba mais sobre soluções digitais</a>
         </div>
     </section>
     
@@ -66,17 +66,33 @@
         <div class="container">
             <h2>VEJA ALGUNS TRABALHOS</h2>
             <div class="carousel">
+                <input type="radio" name="carousel" id="slide1" checked>
+                <input type="radio" name="carousel" id="slide2">
+                <input type="radio" name="carousel" id="slide3">
+                <input type="radio" name="carousel" id="slide4">
+                <input type="radio" name="carousel" id="slide5">
+                <input type="radio" name="carousel" id="slide6">
+                <input type="radio" name="carousel" id="slide7">
+
                 <div class="carousel-track">
-                    <div class="carousel-item">Projeto 1</div>
-                    <div class="carousel-item">Projeto 2</div>
-                    <div class="carousel-item">Projeto 3</div>
-                    <div class="carousel-item">Projeto 4</div>
-                    <div class="carousel-item">Projeto 5</div>
-                    <div class="carousel-item">Projeto 6</div>
-                    <div class="carousel-item">Projeto 7</div>
+                    <div class="carousel-item" id="item1">Projeto 1</div>
+                    <div class="carousel-item" id="item2">Projeto 2</div>
+                    <div class="carousel-item" id="item3">Projeto 3</div>
+                    <div class="carousel-item" id="item4">Projeto 4</div>
+                    <div class="carousel-item" id="item5">Projeto 5</div>
+                    <div class="carousel-item" id="item6">Projeto 6</div>
+                    <div class="carousel-item" id="item7">Projeto 7</div>
                 </div>
-                <button class="carousel-button prev">&lt;</button>
-                <button class="carousel-button next">&gt;</button>
+
+                <div class="carousel-controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                    <label for="slide6"></label>
+                    <label for="slide7"></label>
+                </div>
             </div>
         </div>
     </section>
@@ -86,7 +102,7 @@
             <div class="contact-info">
                 <h2>MAIS PERTINHO É MAIS GOSTOSO</h2>
                 <p>Se você está com alguma dúvida, podemos bater um papo e eu te explico detalhadamente como posso te ajudar.</p>
-                <button class="whatsapp-button" onclick="window.location.href='pages/contato.html'">Me chama no Whats</button>
+                <button class="whatsapp-button" onclick="window.location.href='contato.html'">Me chama no Whats</button>
             </div>
             <div class="contact-form">
                 <h2>ALÔ, FALA COMIGO</h2>
@@ -105,7 +121,5 @@
             <p>&copy; 2024 Nay Rodrigues - Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <script src="js/carousel.js"></script>
 </body>
 </html>
