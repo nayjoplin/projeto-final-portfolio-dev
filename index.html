@@ -4,145 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nay Rodrigues - Desenvolvedora Full Stack</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header bg-dark text-light py-3">
-        <div class="container">
-            <nav class="nav justify-content-center">
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="sobre.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="projetos.html">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="daily.html">Daily</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <section class="intro text-center py-5 bg-light">
-        <div class="container">
-            <div class="profile">
-                <div class="profile-image mx-auto mb-4"></div>
-                <h1 class="name display-4">NAY</h1>
-                <h2 class="surname h4">RODRIGUES</h2>
-                <p class="role lead">Desenvolvedora Full Stack</p>
-                <p class="specialty">Especialista em UX/UI Design e desenvolvimento web.</p>
-            </div>
-        </div>
-    </section>
-    
-    <section class="skills py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">COMO EU POSSO TE AJUDAR</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="skill bg-white p-4 rounded text-center">
-                        <div class="skill-icon mb-3 mx-auto bg-warning"></div>
-                        <h3>UX/UI Design</h3>
-                        <p>Criação de interfaces intuitivas, modernas e atraentes.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skill bg-white p-4 rounded text-center">
-                        <div class="skill-icon mb-3 mx-auto bg-warning"></div>
-                        <h3>Desenvolvimento Web</h3>
-                        <p>Desenvolvimento de sites responsivos e funcionais.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skill bg-white p-4 rounded text-center">
-                        <div class="skill-icon mb-3 mx-auto bg-warning"></div>
-                        <h3>SEO</h3>
-                        <p>Otimização de sites para motores de busca.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="cta text-center py-5 bg-warning">
-        <div class="container">
-            <a href="projetos.html" class="btn btn-dark btn-lg">Saiba mais sobre soluções digitais</a>
-        </div>
-    </section>
-    
-    <section class="portfolio py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">VEJA ALGUNS TRABALHOS</h2>
-            <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="carousel-item-content">Projeto 1</div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content">Projeto 2</div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content">Projeto 3</div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content">Projeto 4</div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content">Projeto 5</div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content">Projeto 6</div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content">Projeto 7</div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
-    
-    <section class="contact py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>MAIS PERTINHO É MAIS GOSTOSO</h2>
-                    <p>Se você está com alguma dúvida, podemos bater um papo e eu te explico detalhadamente como posso te ajudar.</p>
-                    <button class="btn btn-warning btn-lg" onclick="window.location.href='contato.html'">Me chama no Whats</button>
-                </div>
-                <div class="col-md-6">
-                    <h2>ALÔ, FALA COMIGO</h2>
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Nome" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" placeholder="Mensagem" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-dark btn-lg">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer class="footer bg-dark text-light py-3">
-        <div class="container text-center">
-            <p>&copy; 2024 Nay Rodrigues - Todos os direitos reservados.</p>
-        </div>
-    </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <section class="intro">
+        <div class="profile-image"></div>
+        <h1 class="name">NAY</h1>
+        <h2 class="surname">RODRIGUES</h2>
+        <p class="role">Desenvolvedora Full Stack</p>
+        <p class="specialty">Especialista em UX/UI Design e desenvolvimento web.</p>
+    </section>
+
+    <section class="skills">
+        <h2>COMO EU POSSO TE AJUDAR</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-icon"></div>
+                <h3>UX/UI Design</h3>
+                <p>Criação de interfaces intuitivas, modernas e atraentes.</p>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"></div>
+                <h3>Desenvolvimento Web</h3>
+                <p>Desenvolvimento de sites responsivos e funcionais.</p>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"></div>
+                <h3>SEO</h3>
+                <p>Otimização de sites para motores de busca.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <a href="#" class="cta-button">Saiba mais sobre soluções digitais</a>
+    </section>
+
+    <section class="portfolio">
+        <h2>VEJA ALGUNS TRABALHOS</h2>
+        <div class="portfolio-slider">
+            <div class="portfolio-item">Trabalho 1</div>
+            <div class="portfolio-item">Trabalho 2</div>
+            <div class="portfolio-item">Trabalho 3</div>
+        </div>
+        <div class="slider-controls">
+            <span>&lt;</span>
+            <span>&gt;</span>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact-info">
+            <h2>MAIS PERTINHO É MAIS GOSTOSO</h2>
+            <p>Se você está com alguma dúvida podemos bater um papo e eu te explico detalhadamente como posso te ajudar.</p>
+            <a href="#" class="whatsapp-button">Me chama no Whats</a>
+        </div>
+        <div class="contact-form">
+            <h2>ALÔ, FALA COMIGO</h2>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Nay Rodrigues - Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
