@@ -4,62 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos - Nay Rodrigues</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header bg-dark text-light py-3">
         <div class="container">
-            <nav class="nav">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="daily.html">Daily</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+            <nav class="nav justify-content-center">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-light" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="projetos.html">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="daily.html">Daily</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
-    <section class="projects">
+    <section class="projects py-5">
         <div class="container">
-            <h1>Projetos</h1>
-            <div class="carousel">
-                <input type="radio" name="carousel" id="slide1" checked>
-                <input type="radio" name="carousel" id="slide2">
-                <input type="radio" name="carousel" id="slide3">
-                <input type="radio" name="carousel" id="slide4">
-                <input type="radio" name="carousel" id="slide5">
-                <input type="radio" name="carousel" id="slide6">
-                <input type="radio" name="carousel" id="slide7">
-
-                <div class="carousel-track">
-                    <div class="carousel-item"><a href="projeto1.html">Projeto 1</a></div>
-                    <div class="carousel-item"><a href="projeto2.html">Projeto 2</a></div>
-                    <div class="carousel-item"><a href="projeto3.html">Projeto 3</a></div>
-                    <div class="carousel-item"><a href="projeto4.html">Projeto 4</a></div>
-                    <div class="carousel-item"><a href="projeto5.html">Projeto 5</a></div>
-                    <div class="carousel-item"><a href="projeto6.html">Projeto 6</a></div>
-                    <div class="carousel-item"><a href="projeto7.html">Projeto 7</a></div>
+            <h1 class="text-center mb-4">Projetos</h1>
+            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-item-content"><a href="projeto1.html">Projeto 1</a></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-content"><a href="projeto2.html">Projeto 2</a></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-content"><a href="projeto3.html">Projeto 3</a></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-content"><a href="projeto4.html">Projeto 4</a></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-content"><a href="projeto5.html">Projeto 5</a></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-content"><a href="projeto6.html">Projeto 6</a></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-content"><a href="projeto7.html">Projeto 7</a></div>
+                    </div>
                 </div>
-
-                <div class="carousel-controls">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
-                    <label for="slide5"></label>
-                    <label for="slide6"></label>
-                    <label for="slide7"></label>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
     
-    <footer class="footer">
-        <div class="container">
+    <footer class="footer bg-dark text-light py-3">
+        <div class="container text-center">
             <p>&copy; 2024 Nay Rodrigues - Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
