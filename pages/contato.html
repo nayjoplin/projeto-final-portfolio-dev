@@ -4,51 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Nay Rodrigues</title>
-    <!-- Bootstrap CSS -->
+    <!-- Incluindo Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header bg-dark text-light py-3">
-        <div class="container">
-            <nav class="nav justify-content-center">
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link text-light" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="sobre.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="projetos.html">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="daily.html">Daily</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="contato.html">Contato</a></li>
-                </ul>
+    <!-- Início do Header -->
+    <header class="bg-primary text-light py-3">
+        <div class="container text-center">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Nay Rodrigues</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.html">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projetos.html">Projetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
-    
-    <section class="contact py-5">
+    <!-- Fim do Header -->
+
+    <!-- Início da Seção de Contato -->
+    <section class="contact bg-secondary text-light py-5">
         <div class="container">
-            <h1 class="text-center mb-4">Contato</h1>
-            <p class="lead text-center">Entre em contato comigo para discutir como posso ajudar no seu próximo projeto.</p>
-            <form class="mt-4">
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Nome" required>
+            <h1 class="display-4 text-center">Entre em Contato</h1>
+            <div class="row mt-5">
+                <!-- Informação de Contato -->
+                <div class="col-md-6 mb-4">
+                    <h2 class="mb-3">MAIS PERTINHO É MAIS GOSTOSO</h2>
+                    <p>Se você está com alguma dúvida, podemos bater um papo e eu te explico detalhadamente como posso te ajudar.</p>
+                    <a href="#" class="btn btn-primary">Me chama no Whats</a>
                 </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Email" required>
+                <!-- Formulário de Contato -->
+                <div class="col-md-6">
+                    <h2 class="mb-4">ALÔ, FALA COMIGO</h2>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <textarea class="form-control" placeholder="Mensagem" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark btn-lg">Enviar</button>
-            </form>
+            </div>
         </div>
     </section>
-    
-    <footer class="footer bg-dark text-light py-3">
-        <div class="container text-center">
+    <!-- Fim da Seção de Contato -->
+
+    <!-- Início do Footer -->
+    <footer class="bg-primary text-light py-3 text-center">
+        <div class="container">
             <p>&copy; 2024 Nay Rodrigues - Todos os direitos reservados.</p>
         </div>
     </footer>
+    <!-- Fim do Footer -->
 
-    <!-- Bootstrap JS -->
+    <!-- Incluindo Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
