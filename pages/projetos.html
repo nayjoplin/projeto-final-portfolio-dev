@@ -4,71 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos - Nay Rodrigues</title>
-    <!-- Bootstrap CSS -->
+    <!-- Incluindo Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header bg-dark text-light py-3">
-        <div class="container">
-            <nav class="nav justify-content-center">
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link text-light" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="sobre.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="projetos.html">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="daily.html">Daily</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="contato.html">Contato</a></li>
-                </ul>
+    <!-- Início do Header -->
+    <header class="bg-primary text-light py-3">
+        <div class="container text-center">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Nay Rodrigues</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.html">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="projetos.html">Projetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
-    
-    <section class="projects py-5">
+    <!-- Fim do Header -->
+
+    <!-- Início da Seção de Projetos -->
+    <section class="bg-secondary text-light text-center py-5">
         <div class="container">
-            <h1 class="text-center mb-4">Projetos</h1>
-            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="carousel-item-content"><a href="projeto1.html">Projeto 1</a></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content"><a href="projeto2.html">Projeto 2</a></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content"><a href="projeto3.html">Projeto 3</a></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content"><a href="projeto4.html">Projeto 4</a></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content"><a href="projeto5.html">Projeto 5</a></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content"><a href="projeto6.html">Projeto 6</a></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content"><a href="projeto7.html">Projeto 7</a></div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            <h1 class="display-4">Meus Projetos</h1>
+            <p class="lead mb-5">Aqui estão alguns dos projetos que eu desenvolvi ao longo da minha carreira como desenvolvedora full stack.</p>
+            <div class="d-flex justify-content-center align-items-center">
+                <span class="portfolio-control me-3">&lt;</span>
+                <div class="portfolio-item bg-transparent border border-primary rounded mx-2 px-3 py-4">Projeto 1</div>
+                <div class="portfolio-item bg-transparent border border-primary rounded mx-2 px-3 py-4">Projeto 2</div>
+                <div class="portfolio-item bg-transparent border border-primary rounded mx-2 px-3 py-4">Projeto 3</div>
+                <span class="portfolio-control ms-3">&gt;</span>
             </div>
         </div>
     </section>
-    
-    <footer class="footer bg-dark text-light py-3">
-        <div class="container text-center">
+    <!-- Fim da Seção de Projetos -->
+
+    <!-- Início do Footer -->
+    <footer class="bg-primary text-light py-3 text-center">
+        <div class="container">
             <p>&copy; 2024 Nay Rodrigues - Todos os direitos reservados.</p>
         </div>
     </footer>
+    <!-- Fim do Footer -->
 
-    <!-- Bootstrap JS -->
+    <!-- Incluindo Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
