@@ -4,85 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nay Rodrigues - Desenvolvedora Full Stack</title>
+    <!-- Incluindo Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+    <!-- Início do Header -->
+    <header class="bg-primary text-light py-3">
+        <div class="container text-center">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Nay Rodrigues</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Projetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
+    <!-- Fim do Header -->
 
-    <section class="intro">
-        <div class="profile-image"></div>
-        <h1 class="name">NAY</h1>
-        <h2 class="surname">RODRIGUES</h2>
-        <p class="role">Desenvolvedora Full Stack</p>
-        <p class="specialty">Especialista em UX/UI Design e desenvolvimento web.</p>
+    <!-- Início da Seção de Introdução -->
+    <section class="intro bg-secondary text-light text-center py-5">
+        <div class="container">
+            <!-- Imagem de perfil (círculo branco) -->
+            <div class="profile-image bg-white mx-auto mb-4 rounded-circle"></div>
+            <h1 class="name display-4">NAY</h1>
+            <h2 class="surname h2">RODRIGUES</h2>
+            <p class="role h4 text-uppercase">Desenvolvedora Full Stack</p>
+            <p class="specialty h6">Especialista em UX/UI Design e desenvolvimento web.</p>
+        </div>
     </section>
+    <!-- Fim da Seção de Introdução -->
 
-    <section class="skills">
-        <h2>COMO EU POSSO TE AJUDAR</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <div class="skill-icon"></div>
-                <h3>UX/UI Design</h3>
-                <p>Criação de interfaces intuitivas, modernas e atraentes.</p>
+    <!-- Início da Seção de Habilidades -->
+    <section class="skills py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="mb-5">COMO EU POSSO TE AJUDAR</h2>
+            <div class="row">
+                <!-- Bloco de Habilidade 1 -->
+                <div class="col-md-4">
+                    <div class="skill-icon border rounded-circle mx-auto mb-3"></div>
+                    <h3 class="h5">UX/UI Design</h3>
+                    <p>Criação de interfaces intuitivas, modernas e atraentes.</p>
+                </div>
+                <!-- Bloco de Habilidade 2 -->
+                <div class="col-md-4">
+                    <div class="skill-icon border rounded-circle mx-auto mb-3"></div>
+                    <h3 class="h5">Desenvolvimento Web</h3>
+                    <p>Desenvolvimento de sites responsivos e funcionais.</p>
+                </div>
+                <!-- Bloco de Habilidade 3 -->
+                <div class="col-md-4">
+                    <div class="skill-icon border rounded-circle mx-auto mb-3"></div>
+                    <h3 class="h5">SEO</h3>
+                    <p>Otimização de sites para motores de busca.</p>
+                </div>
             </div>
-            <div class="skill">
-                <div class="skill-icon"></div>
-                <h3>Desenvolvimento Web</h3>
-                <p>Desenvolvimento de sites responsivos e funcionais.</p>
+        </div>
+    </section>
+    <!-- Fim da Seção de Habilidades -->
+
+    <!-- Início da Seção de Call-to-Action -->
+    <section class="cta bg-secondary text-center py-4">
+        <div class="container">
+            <a href="#" class="btn btn-primary btn-lg">Saiba mais sobre soluções digitais</a>
+        </div>
+    </section>
+    <!-- Fim da Seção de Call-to-Action -->
+
+    <!-- Início da Seção de Portfólio -->
+    <section class="portfolio py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="mb-4">VEJA ALGUNS TRABALHOS</h2>
+            <div class="d-flex justify-content-center align-items-center">
+                <span class="portfolio-control me-3">&lt;</span>
+                <div class="portfolio-item bg-transparent border border-primary rounded mx-2 px-3 py-4">Trabalho 1</div>
+                <div class="portfolio-item bg-transparent border border-primary rounded mx-2 px-3 py-4">Trabalho 2</div>
+                <div class="portfolio-item bg-transparent border border-primary rounded mx-2 px-3 py-4">Trabalho 3</div>
+                <span class="portfolio-control ms-3">&gt;</span>
             </div>
-            <div class="skill">
-                <div class="skill-icon"></div>
-                <h3>SEO</h3>
-                <p>Otimização de sites para motores de busca.</p>
+        </div>
+    </section>
+    <!-- Fim da Seção de Portfólio -->
+
+    <!-- Início da Seção de Contato -->
+    <section class="contact bg-secondary text-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Informação de Contato -->
+                <div class="col-md-6 mb-4">
+                    <h2 class="mb-3">MAIS PERTINHO É MAIS GOSTOSO</h2>
+                    <p>Se você está com alguma dúvida, podemos bater um papo e eu te explico detalhadamente como posso te ajudar.</p>
+                    <a href="#" class="btn btn-primary">Me chama no Whats</a>
+                </div>
+                <!-- Formulário de Contato -->
+                <div class="col-md-6">
+                    <h2 class="mb-4">ALÔ, FALA COMIGO</h2>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
+    <!-- Fim da Seção de Contato -->
 
-    <section class="cta">
-        <a href="#" class="cta-button">Saiba mais sobre soluções digitais</a>
-    </section>
-
-    <section class="portfolio">
-        <h2>VEJA ALGUNS TRABALHOS</h2>
-        <div class="portfolio-slider">
-            <div class="portfolio-item">Trabalho 1</div>
-            <div class="portfolio-item">Trabalho 2</div>
-            <div class="portfolio-item">Trabalho 3</div>
+    <!-- Início do Footer -->
+    <footer class="bg-primary text-light py-3 text-center">
+        <div class="container">
+            <p>&copy; 2024 Nay Rodrigues - Todos os direitos reservados.</p>
         </div>
-        <div class="slider-controls">
-            <span>&lt;</span>
-            <span>&gt;</span>
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="contact-info">
-            <h2>MAIS PERTINHO É MAIS GOSTOSO</h2>
-            <p>Se você está com alguma dúvida podemos bater um papo e eu te explico detalhadamente como posso te ajudar.</p>
-            <a href="#" class="whatsapp-button">Me chama no Whats</a>
-        </div>
-        <div class="contact-form">
-            <h2>ALÔ, FALA COMIGO</h2>
-            <form>
-                <input type="text" placeholder="Nome" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2024 Nay Rodrigues - Todos os direitos reservados.</p>
     </footer>
+    <!-- Fim do Footer -->
+
+    <!-- Incluindo Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
