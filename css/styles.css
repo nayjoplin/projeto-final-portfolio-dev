@@ -1,4 +1,5 @@
- {
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,256 +13,86 @@ body {
     line-height: 1.6;
 }
 
-/* Container */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+/* Estilos específicos para o header */
+header {
+    background-color: #4B0082; /* Fundo roxo escuro */
 }
 
-/* Header */
-.header {
-    background-color: #4B0082; /* Roxo escuro */
-    padding: 20px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.nav ul li a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* Seção de Introdução */
+/* Estilos para a seção de introdução */
 .intro {
-    background-color: #D5A6E0; /* Lilás médio */
-    text-align: center;
-    padding: 50px 20px;
+    background-color: #D5A6E0; /* Fundo lilás médio */
 }
 
+/* Imagem de perfil */
 .profile-image {
-    background-color: #FFFFFF; /* Branco para imagem de perfil */
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin: 0 auto;
-    border: 4px solid #4B0082;
+    border: 5px solid #4B0082;
 }
 
-.name {
-    font-size: 36px;
-    font-weight: bold;
-    color: #4B0082;
-}
-
-.surname {
-    font-size: 24px;
-    color: #4B0082;
-}
-
-.role {
-    font-size: 18px;
-    font-weight: bold;
+/* Nomes e texto na introdução */
+.name, .surname, .role, .specialty {
     color: #FFFFFF;
 }
 
-.specialty {
-    font-size: 16px;
-    color: #FFFFFF;
-    margin-top: 5px;
-}
-
-/* Seção de Habilidades */
+/* Seção de habilidades */
 .skills {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* Fundo branco */
 }
 
-.skills h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
-    color: #4B0082;
-}
-
-.skills-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.skill {
-    text-align: center;
-}
-
+/* Ícones de habilidades */
 .skill-icon {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 80px;
+    height: 80px;
     border: 2px solid #4B0082;
-    margin: 0 auto 20px;
-    background-color: transparent;
-}
-
-.skill h3 {
-    font-size: 18px;
-    color: #4B0082;
-}
-
-.skill p {
-    font-size: 14px;
-    color: #4B0082;
 }
 
 /* Seção de Call-to-Action */
 .cta {
-    text-align: center;
-    background-color: #D5A6E0; /* Lilás médio */
-    padding: 20px 0;
+    background-color: #D5A6E0; /* Fundo lilás médio */
 }
 
 .cta-button {
-    background-color: #4B0082; /* Roxo escuro */
-    color: #FFFFFF;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
+    background-color: #4B0082; /* Botão roxo escuro */
 }
 
-/* Seção de Portfólio */
-.portfolio {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #FFFFFF;
-}
-
-.portfolio h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
-    color: #4B0082;
-}
-
-.portfolio-slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
+/* Seção de portfólio */
 .portfolio-item {
     width: 150px;
     height: 100px;
     background-color: transparent;
     border: 2px solid #4B0082;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    color: #4B0082;
 }
 
-.slider-controls span {
+/* Controles do carrossel do portfólio */
+.portfolio-control {
     font-size: 24px;
     color: #4B0082;
     cursor: pointer;
 }
 
-/* Seção de Contato */
+/* Seção de contato */
 .contact {
-    background-color: #D5A6E0; /* Lilás médio */
-    padding: 40px 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    background-color: #D5A6E0; /* Fundo lilás médio */
 }
 
-.contact-info {
-    width: 40%;
-}
-
-.contact-info h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #4B0082;
-}
-
-.contact-info p {
-    font-size: 14px;
-    color: #4B0082;
-    margin-bottom: 20px;
-}
-
+/* Botão de WhatsApp */
 .whatsapp-button {
-    background-color: #4B0082; /* Roxo escuro */
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
+    background-color: #4B0082; /* Botão roxo escuro */
 }
 
-.contact-form {
-    width: 50%;
-}
-
-.contact-form h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #4B0082;
-}
-
+/* Estilo dos inputs do formulário */
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
     border: 2px solid #4B0082;
     border-radius: 5px;
 }
 
+/* Estilo do botão do formulário */
 .contact-form button {
-    width: 100%;
-    padding: 10px;
     background-color: #4B0082;
     color: #FFFFFF;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #3a006f;
-}
-
-/* Footer */
-.footer {
-    background-color: #4B0082;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .skills-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .contact-info, .contact-form {
-        width: 100%;
-        margin-bottom: 20px;
-    }
 }
