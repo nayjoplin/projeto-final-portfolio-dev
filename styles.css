@@ -31,24 +31,20 @@ header {
 /* Estilos para a seção de introdução */
 .intro {
     background-color: #D5A6E0; /* Fundo lilás médio */
+    color: #FFFFFF; /* Texto branco */
 }
 
-/* Imagem de perfil */
 .profile-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid #4B0082;
-}
-
-/* Nomes e texto na introdução */
-.name, .surname, .role, .specialty {
-    color: #FFFFFF;
+    border: 5px solid #4B0082; /* Borda roxa escura */
 }
 
 /* Seção de habilidades */
 .skills {
     background-color: #FFFFFF; /* Fundo branco */
+    color: #4B0082; /* Texto roxo escuro */
 }
 
 .skills h2 {
@@ -79,6 +75,7 @@ header {
 .cta {
     background-color: #D5A6E0; /* Fundo lilás médio */
     padding: 20px 0;
+    color: #4B0082;
 }
 
 .cta-button {
@@ -97,6 +94,7 @@ header {
 /* Seção de portfólio */
 .portfolio {
     background-color: #FFFFFF; /* Fundo branco */
+    color: #4B0082;
 }
 
 .portfolio h2 {
@@ -127,6 +125,7 @@ header {
 .contact {
     background-color: #D5A6E0; /* Fundo lilás médio */
     padding: 40px 0;
+    color: #4B0082;
 }
 
 .contact h2 {
@@ -160,6 +159,7 @@ header {
     margin-bottom: 15px;
     border: 2px solid #4B0082;
     border-radius: 5px;
+    color: #4B0082;
 }
 
 .contact-form button {
@@ -183,6 +183,7 @@ header {
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
+    color: #4B0082;
 }
 
 .daily-entry h2 {
