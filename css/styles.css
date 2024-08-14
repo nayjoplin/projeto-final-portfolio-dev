@@ -1,12 +1,8 @@
 /* Estilos globais */
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
 }
 
 /* Estilos do container */
@@ -16,50 +12,21 @@ body {
     padding: 0 20px;
 }
 
-/* Estilos do header e do nav */
-.header {
-    background-color: #333;
-    padding: 20px 0;
-}
-
-.nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-.nav ul li {
-    margin: 0 15px;
-}
-
-.nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav ul li a:hover {
-    color: #ff9800;
-}
-
-/* Estilos da seção de introdução */
-.intro {
-    background-color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
+/* Estilos da imagem de perfil */
 .profile-image {
-    background-image: url('path/to/profile-image.jpg');
+    background-image: url('path/to/profile-image.jpg'); /* colocar minha foto de perfil */
     background-size: cover;
     background-position: center;
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin: 0 auto;
+}
+
+/* Estilos das seções */
+.intro {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .name {
@@ -81,7 +48,6 @@ body {
     color: #888;
 }
 
-/* Estilos da seção de habilidades */
 .skills {
     background-color: #f4f4f4;
     padding: 50px 0;
@@ -127,7 +93,6 @@ body {
     color: #666;
 }
 
-/* Estilos da seção CTA */
 .cta {
     background-color: #ff9800;
     padding: 30px 0;
@@ -148,7 +113,16 @@ body {
     background-color: #ff5722;
 }
 
-/* Estilos da seção de portfólio */
+/* Estilos customizados do carrossel */
+.carousel-item-content {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .portfolio {
     background-color: #f4f4f4;
     padding: 50px 0;
@@ -160,93 +134,79 @@ body {
     font-size: 28px;
 }
 
-/* Carrossel */
-.carousel {
-    position: relative;
-    max-width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.carousel-controls label {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #333;
-    margin: 10px 5px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-#slide1:checked ~ .carousel-track {
-    transform: translateX(0%);
-}
-
-#slide2:checked ~ .carousel-track {
-    transform: translateX(-100%);
-}
-
-#slide3:checked ~ .carousel-track {
-    transform: translateX(-200%);
-}
-
-/* Estilos da seção de contato */
 .contact {
-    background-color: #fff;
+    background-color: #f4f4f4;
     padding: 50px 0;
-    text-align: center;
 }
 
-.contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.contact input, .contact textarea {
+.contact p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+}
+
+.contact-form button {
     width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.contact button {
-    background-color: #ff9800;
-    color: #fff;
-    padding: 10px 20px;
+    padding: 15px;
+    background-color: #333;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
 }
 
-.contact button:hover {
+.contact-form button:hover {
     background-color: #ff5722;
 }
 
-/* Estilos do footer */
+/* Footer */
 .footer {
     background-color: #333;
     color: #fff;
+    padding: 30px 0;
     text-align: center;
-    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        max-width: 100%;
+    }
+
+    .carousel-item-content {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro, .skills, .cta, .portfolio, .contact {
+        padding: 30px 0;
+    }
+
+    .cta-button, .contact-form button {
+        width: 100%;
+        padding: 12px;
+    }
 }
