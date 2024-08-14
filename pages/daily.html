@@ -4,40 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily - Nay Rodrigues</title>
-    <!-- Bootstrap CSS -->
+    <!-- Incluindo Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header bg-dark text-light py-3">
-        <div class="container">
-            <nav class="nav justify-content-center">
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link text-light" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="sobre.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="projetos.html">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="daily.html">Daily</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="contato.html">Contato</a></li>
-                </ul>
+    <!-- Início do Header -->
+    <header class="bg-primary text-light py-3">
+        <div class="container text-center">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Nay Rodrigues</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.html">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projetos.html">Projetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="daily.html">Daily</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
-    
-    <section class="daily py-5">
+    <!-- Fim do Header -->
+
+    <!-- Início da Seção Daily -->
+    <section class="bg-secondary text-light py-5">
         <div class="container">
-            <h1 class="text-center mb-4">Daily</h1>
-            <p class="lead text-center">Acompanhe minhas atualizações diárias e descubra mais sobre minha rotina como desenvolvedora full stack.</p>
-            <!-- Conteúdo diário pode ser adicionado aqui -->
+            <h1 class="display-4 text-center">Daily</h1>
+            <p class="lead text-center mb-5">Aqui você pode acompanhar minhas atualizações diárias e o progresso dos meus estudos e projetos.</p>
+
+            <!-- Exemplo de entrada diária -->
+            <div class="daily-entry bg-light text-dark p-4 mb-4 rounded">
+                <h2 class="h5">13 de Agosto de 2024</h2>
+                <p>Hoje, trabalhei no design da interface de um novo projeto web, focando em melhorar a experiência do usuário. Também estudei sobre acessibilidade na web e apliquei algumas melhorias no meu portfólio.</p>
+            </div>
+
+            <div class="daily-entry bg-light text-dark p-4 mb-4 rounded">
+                <h2 class="h5">12 de Agosto de 2024</h2>
+                <p>Dia produtivo! Concluí o desenvolvimento de um sistema de login para um cliente e finalizei as correções no layout responsivo do meu portfólio. Além disso, gravei um novo vlog sobre como organizo minha rotina de estudos.</p>
+                <!-- Exemplo de inclusão de vídeo -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/video-id" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Adicionar mais entradas diárias conforme necessário -->
         </div>
     </section>
-    
-    <footer class="footer bg-dark text-light py-3">
-        <div class="container text-center">
+    <!-- Fim da Seção Daily -->
+
+    <!-- Início do Footer -->
+    <footer class="bg-primary text-light py-3 text-center">
+        <div class="container">
             <p>&copy; 2024 Nay Rodrigues - Todos os direitos reservados.</p>
         </div>
     </footer>
+    <!-- Fim do Footer -->
 
-    <!-- Bootstrap JS -->
+    <!-- Incluindo Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
