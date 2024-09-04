@@ -1,172 +1,234 @@
-/* Reset básico */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos Globais */
+/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #E0CFF2; /* Fundo lilás claro */
-    color: #4B0082; /* Cor do texto roxo escuro */
+    background-color: #EDE5F2;
+    color: #4B0082;
     line-height: 1.6;
 }
 
-/* Estilos específicos para o header */
+/* Header */
 header {
-    background-color: #4B0082; /* Fundo roxo escuro */
+    background-color: #4B0082;
+    padding: 20px;
+    text-align: center;
 }
 
-.navbar-brand,
-.navbar-nav .nav-link {
-    color: #FFFFFF;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
-.navbar-nav .nav-link.active {
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
     font-weight: bold;
-    text-decoration: underline;
 }
 
-/* Estilos para a seção de introdução */
+/* Introdução */
 .intro {
-    background-color: #D5A6E0; /* Fundo lilás médio */
-    color: #FFFFFF; /* Texto branco */
+    background-color: #D5A6E0;
+    text-align: center;
+    padding: 50px 0;
 }
 
-.profile-image {
+.profile-picture img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid #4B0082; /* Borda roxa escura */
+    border: 5px solid #4B0082;
+    margin-bottom: 20px;
 }
 
-/* Seção de habilidades */
+.intro h1 {
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.intro span {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+/* Habilidades */
 .skills {
-    background-color: #FFFFFF; /* Fundo branco */
-    color: #4B0082; /* Texto roxo escuro */
+    background-color: #FFFFFF;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .skills h2 {
+    font-size: 24px;
     color: #4B0082;
-    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.skill-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.skill {
+    text-align: center;
+    flex-basis: 30%;
 }
 
 .skill-icon {
     width: 80px;
     height: 80px;
+    border-radius: 50%;
     border: 2px solid #4B0082;
-    background-color: transparent;
-    margin-bottom: 15px;
+    margin: 0 auto 20px;
 }
 
 .skill h3 {
-    color: #4B0082;
     font-size: 18px;
+    color: #4B0082;
     margin-bottom: 10px;
 }
 
 .skill p {
-    color: #4B0082;
     font-size: 14px;
+    color: #4B0082;
 }
 
-/* Seção de Call-to-Action */
+/* Call-to-action */
 .cta {
-    background-color: #D5A6E0; /* Fundo lilás médio */
-    padding: 20px 0;
-    color: #4B0082;
+    background-color: #D5A6E0;
+    text-align: center;
+    padding: 30px 0;
 }
 
 .cta-button {
-    background-color: #4B0082; /* Botão roxo escuro */
-    color: #FFFFFF;
-    padding: 10px 20px;
+    background-color: #4B0082;
+    color: #FFF;
+    padding: 15px 30px;
+    text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
-    text-decoration: none;
 }
 
 .cta-button:hover {
     background-color: #3B0078;
 }
 
-/* Seção de portfólio */
+/* Portfólio */
 .portfolio {
-    background-color: #FFFFFF; /* Fundo branco */
-    color: #4B0082;
+    background-color: #FFFFFF;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .portfolio h2 {
+    font-size: 24px;
     color: #4B0082;
-    font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio-item {
-    width: 150px;
+    width: 100px;
     height: 100px;
-    background-color: transparent;
     border: 2px solid #4B0082;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    color: #4B0082;
+    margin: 0 15px;
 }
 
-.portfolio-control {
+.left-control, .right-control {
     font-size: 24px;
     color: #4B0082;
     cursor: pointer;
 }
 
-/* Seção de contato */
+/* Contato */
 .contact {
-    background-color: #D5A6E0; /* Fundo lilás médio */
-    padding: 40px 0;
-    color: #4B0082;
+    background-color: #D5A6E0;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
 }
 
-.contact h2 {
+.contact-info {
+    width: 50%;
+}
+
+.contact-info h3 {
+    font-size: 18px;
     color: #4B0082;
-    font-weight: bold;
     margin-bottom: 20px;
 }
 
-.contact p {
-    color: #4B0082;
+.contact-info p {
     font-size: 14px;
+    color: #4B0082;
     margin-bottom: 20px;
 }
 
 .whatsapp-button {
-    background-color: #4B0082; /* Botão roxo escuro */
-    color: #FFFFFF;
+    background-color: #4B0082;
+    color: #FFF;
     padding: 10px 20px;
-    border-radius: 5px;
     text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
 .whatsapp-button:hover {
     background-color: #3B0078;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form {
+    width: 40%;
+}
+
+.contact-form h3 {
+    font-size: 18px;
+    color: #4B0082;
+    margin-bottom: 20px;
+}
+
+.contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 2px solid #4B0082;
     border-radius: 5px;
-    color: #4B0082;
 }
 
 .contact-form button {
     width: 100%;
     padding: 10px;
     background-color: #4B0082;
-    color: #FFFFFF;
+    color: #FFF;
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -175,52 +237,4 @@ header {
 
 .contact-form button:hover {
     background-color: #3B0078;
-}
-
-/* Estilo específico para a página Daily */
-.daily-entry {
-    border: 2px solid #4B0082;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    color: #4B0082;
-}
-
-.daily-entry h2 {
-    color: #4B0082;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.daily-entry p {
-    color: #4B0082;
-    font-size: 14px;
-}
-
-/* Footer */
-footer {
-    background-color: #4B0082;
-    color: #FFFFFF;
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .skills .row, 
-    .contact .row {
-        flex-direction: column;
-    }
-
-    .cta-button,
-    .whatsapp-button {
-        width: 100%;
-    }
 }
