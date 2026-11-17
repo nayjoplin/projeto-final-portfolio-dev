@@ -1,3 +1,15 @@
+<div align="center">
+
+![Portfólio de desenvolvimento](assets/cover.svg)
+
+# Portfólio de desenvolvimento
+
+Projeto de apresentação de trabalhos e estudos de desenvolvimento web
+
+**Projeto de estudo**
+
+</div>
+
 ## Meu portfólio 🔥
 
 **Conheça as seções:**
